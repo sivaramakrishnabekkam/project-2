@@ -1,0 +1,243 @@
+html{
+    scroll-behavior: smooth;
+    width: 100%;  }
+
+*{
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color:  #f0f0f0;
+    width: 100%; 
+  margin: 0; }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left:0px;
+    background: #BE3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    height: 55px;
+    align-items: center;
+    width: 100%; /* Set nav's width to 100% */
+    margin: 0; /* Remove default margin */
+    padding: 0 1rem;
+   
+}
+.link{
+    display: flex;
+    margin-right: 2rem;
+  
+  }
+ .link a{
+    text-decoration: none;
+    text-transform: capitalize;
+color:  #f0f0f0;
+padding-right: 2rem;
+  
+}
+.main {
+    height: 100vh;
+  
+    background-color: #252528;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 0;
+   padding: 10rem 2rem;
+   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+   
+}
+.main > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+  position: relative;
+}
+.about{
+    height: 100vh;
+
+    background-color: #45567D;
+    width:100%;position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    padding: 10rem 2rem;
+    top:0;
+    left: 0;
+}
+.resume > a {text-decoration:none;
+  
+  color: crimson;white-space: warp;
+
+}
+.heading{
+    border-bottom:solid #f0f0f0;
+    font-weight: 900;
+    font-size: xx-large;
+  position: relative;
+  bottom: 30px;
+  font-family:inherit ;
+  
+}
+
+  
+  .project {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567D; 
+    position: relative;
+    top: 0;
+    left: 0;
+   
+  }
+  
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom:solid #f0f0f0;
+  }.project-grid {
+  
+   
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  /* Use flex to make children appear side by side */
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    position: relative;
+    top: 60px;
+    left: 20%;
+  }
+  
+  
+  
+  .project {
+    background:  #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  
+  .code {
+    color:  #e0e7f0;
+    transition: color 0.3s ease-out;
+    font-size: larger;
+  }
+  
+  .project:hover .code {
+    color: #ff7f50;
+  }
+  
+.project-image {
+   height: 450px;
+   width:400px;
+   
+ }
+  
+  
+  .project-title {
+    font-size: 2rem;
+    text-decoration: none;
+    color:white;
+    text-underline-offset:none ;
+  }
+  .project-item{
+    width:400px;
+    background-color: #45567D;
+    display: inline-block;
+   
+    margin-left:60px ;
+    vertical-align: middle;margin-bottom: 50px;
+  }
+  .project-item > p{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+  .project-item >a{
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+  .contact{
+    height: 100vh;
+
+    background-color: #45567D;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+   position: relative;
+    top:0;
+    left: 0;
+    padding: 10rem 2rem;
+}
+  .contact > a{
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+  .main, .about, .project, .contact ,.nav{
+    width: 100%;
+  }
+  @media screen and (max-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+    body{
+      font-size: 1rem;
+    }
+    .nav{
+      width: 100%;
+      justify-content:center;
+      top: 0%;
+     
+    }
+    .main{
+      width:100%;
+      left: 0%;
+    }
+    .project-item{
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+    }
+    .project-image{
+      width: 100%;
+
+    }
+    .main,.about,.contact{
+      height: 65vh;
+    }sss
+}

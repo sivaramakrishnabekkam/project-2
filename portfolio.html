@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="body">
+    <div class="nav"id="mynav">
+        <div class="link">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">work</a>
+            <a href="#contact">contact  </a>
+        </div></div>
+        <div class="main"id="main">
+            <h2> Hey I am siva rama krishna</h2>
+            <p>web developer</p>
+        </div>
+        <div class="about" id="about"> 
+          <div class="heading">About Me</div>
+            <p>NAME:SIVA RAMA KRISHNA </p>
+           <p> PALCE:KAKINADA,A.P,INDIA.</p>
+            <p>SKILLS:HTML,CSS, JAVASCRIPT, C,C++.</p>
+            <p>Qalification: Diploma in computer engineering</p>
+           <p class="resume"><a href="BekkamSivaRamaKrishnaResume.pdf">Resume</a></p>
+        </div>
+    
+    <div class="project" id="work">
+      <h2 class="heading">These are some of my projects</h2>
+    <div class="project-gird">
+     <div class="project-item"> <a href="https://sivabekkam.w3spaces.com/">
+        <img src="p2.png" class="project-image"> 
+        <p class="project-title">
+          
+          JavaScript Calculator
+          
+        </p>
+      </a>
+     </div>
+     <div class="project-item"><a href="https://temparaturesiva.w3spaces.com/">
+        <img src="p1.png" class="project-image"> 
+        <p class="project-title">
+          
+          Temparature Converter
+          
+        </p>
+      </a>
+    </div>
+    <div class="project-item"><a href="https://portfoliosiva.w3spaces.com/">
+      <img src="p3.png" class="project-image"> 
+      <p class="project-title">
+        
+       Portfolio
+        
+      </p>
+    </a>
+  </div>
+    </div>
+    
+</div>
+<div class="contact" id="contact">
+  <p class="heading">Contact Details
+  </p>
+  <p class="resume">Email:<a href="mailto:sivarambekkam423@gamil.com">sivarambekkam423@gamil.com</a>
+    </p>
+    <p>Phone Number:7093187283</p>
+    <p>Instagram:sivaram_bekkam</p>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mynav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+    </script>
+</body>
+</html>
